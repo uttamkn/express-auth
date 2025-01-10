@@ -9,6 +9,9 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/nodemailer": "^6.4.17"
   },
+  "scripts": {
+    "start": "bun index.ts"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
@@ -20,3 +23,4 @@
     "nodemailer": "^6.9.16"
   }
 }
+
