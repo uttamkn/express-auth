@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth API Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Auth API Showcase (Task - 1)</h1>
+
+    <section id="sign-up">
+      <h2>Sign-Up</h2>
+      <form id="signUpForm">
+        <label>Username: <input type="text" name="username" required /></label>
+        <label>Email: <input type="email" name="email" required /></label>
+        <label
+          >Password: <input type="text" name="password" required
+        /></label>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <section id="verify-email">
+      <h2>Verify Email</h2>
+      <form id="verifyEmailForm">
+        <label>Email: <input type="email" name="email" required /></label>
+        <label
+          >Verification Code:
+          <input type="text" name="verificationCode" required
+        /></label>
+        <button type="submit">Verify Email</button>
+      </form>
+    </section>
+
+    <section id="sign-in">
+      <h2>Sign-In</h2>
+      <form id="signInForm">
+        <label>Email: <input type="email" name="email" required /></label>
+        <label
+          >Password: <input type="text" name="password" required
+        /></label>
+        <button type="submit">Sign In</button>
+      </form>
+    </section>
+
+    <section id="forgot-password">
+      <h2>Forgot Password</h2>
+      <form id="forgotPasswordForm">
+        <label>Email: <input type="email" name="email" required /></label>
+        <button type="submit">Request Password Reset</button>
+      </form>
+    </section>
+
+    <section id="reset-password">
+      <h2>Reset Password</h2>
+      <form id="resetPasswordForm">
+        <label>Token: <input type="text" name="token" required /></label>
+        <label
+          >New Password: <input type="text" name="newPassword" required
+        /></label>
+        <button type="submit">Reset Password</button>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
