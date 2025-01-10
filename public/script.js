@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000/api/auth";
+const API_BASE_URL = `${window.location.origin}/api/auth`;
 
 async function handleFormSubmit(event, endpoint, method = "POST") {
   event.preventDefault();
@@ -6,6 +6,7 @@ async function handleFormSubmit(event, endpoint, method = "POST") {
   const formData = new FormData(event.target);
   const body = {};
   formData.forEach((value, key) => (body[key] = value));
+  console.log(body);
 
   try {
     const response = await fetch(`${API_BASE_URL}/${endpoint}`, {
